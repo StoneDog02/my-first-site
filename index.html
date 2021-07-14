@@ -1,39 +1,95 @@
-<style>
-  div {
-    text-align: center;
-  }
-  div {
-    font-size: 75px;
-  }
-  div {
-    color: white;
-  }
-  * {
-    background: midnightblue;
-  }
-  button {
-    color: black;
-  }
-  button {
-    background: white;
-  }
-  button {
-    font-size: 25px;
-  }
-  input {
-    background: white;
-  }
-  input {
-    font-size: 25px;
-  }
-  input {
-    text-align: center;
-  }
-</style>
-<div>
-  Stone's Search Emporium
-</div>
-<button>
-  Search
-</button>
-<input type="text" size="50" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" />
+  <script
+    src="https://kit.fontawesome.com/c3ce74937c.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f9690e;
+    }
+    .search-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #2e3131;
+      height: 40px;
+      border-radius: 40px;
+      padding: 10px;
+    }
+    .search-box:hover > .search-txt {
+      width: 400px;
+      padding: 0 6px;
+    }
+    .search-box:hover > .search-btn {
+      background: white;
+    }
+    .search-btn {
+      color: #f9690e;
+      float: right;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2e3131;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+    }
+
+    .search-txt {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 40px;
+      width: 0px;
+    }
+    img {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      height: 248px;
+      width: 186px;
+      transform: rotate(-25deg);
+    }
+  </style>
+  <body>
+    <div class="search-box">
+      <input
+        class="search-txt"
+        type="text"
+        name=""
+        placeholder="Type to search"
+      />
+      <a
+        class="search-btn"
+        onclick="alert('The term bug was used in an account by computer pioneer Grace Hopper, who publicized the cause of a malfunction in an early electromechanical computer. Hopper was released from active duty, and she joined the Harvard Faculty at the Computation Laboratory where she continued her work on the Mark II and Mark III. Operators traced an error in the Mark II to a moth trapped in a relay, coining the term bug.')"
+        href="#"
+      >
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div>
+      <img src="img/computer bug.jpg" alt=" computer bug" />
+      <image src="image/com bug.jpg" alt="new bug" />
+    </div>
+  </body>
+</html>
+<script>
+  //alert("The term bug was used in an account by computer pioneer Grace Hopper, who publicized the cause of a malfunction in an early electromechanical computer. Hopper was released from active duty, and she joined the Harvard Faculty at the Computation Laboratory where she continued her work on the Mark II and Mark III. Operators traced an error in the Mark II to a moth trapped in a relay, coining the term bug.");
+</script>
